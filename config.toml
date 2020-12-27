@@ -1,0 +1,9 @@
+baseURL = "https://ebitenui.github.io"
+languageCode = "en-us"
+title = "Ebiten UI"
+
+disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "robotsTXT", "404", "sitemap"]
+staticDir = ["static", "static-vendor"]
+
+[params]
+alert = "This documentation is currently under construction and may be incomplete or have missing parts."
