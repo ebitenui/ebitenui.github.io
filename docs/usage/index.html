@@ -63,7 +63,7 @@
 
     <main>
       <div class="container">
-        <h1 id="using-ebiten-ui">Using Ebiten UI</h1>
+        <h1 id="how-to-use-ebiten-ui">How to Use Ebiten UI</h1>
 <p>Ebiten UI is a fairly complex and flexible user interface engine. This page explains the concepts used in it.</p>
 <h2 id="retained-mode">Retained Mode</h2>
 <p>Ebiten UI adopts the &ldquo;<a href="https://en.wikipedia.org/wiki/Retained_mode">retained mode</a>&rdquo; model for user interfaces. This means that calls into the Ebiten UI API,
@@ -78,7 +78,7 @@ references to a tool tip renderer, a drag &amp; drop renderer, and any floating 
 the entire user interface. It is also responsible for delivering events throughout the user interface.</li>
 <li><a href="https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Container">Container</a> is the main type to group things together, for example a row of buttons. Containers may contain
 any number of widgets as well as other Containers. They are responsible for layouting their child widgets.</li>
-<li>At the lowest level, there are widgets such as <a href="https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Button">Button</a> or <a href="https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#LabeledCheckbox">LabeledCheckbox</a>.</li>
+<li>At the lowest level, there are widgets such as <a href="https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Button">Button</a> or <a href="https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Checkbox">Checkbox</a>.</li>
 </ul>
 <h2 id="widget">Widget</h2>
 <p>The <a href="https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Widget">Widget</a> type is special in Ebiten UI: Since Go only uses composition rather than inheritance, every widget

@@ -61,11 +61,19 @@ The basic structure of a widget's implementation is as follows:
 6. (optional) If it is necessary to block user input from reaching widgets rendered below the widget
    (if overlapping), implement interface [Layerer].
 
+Input Layering
+--------------
+
+see [Layer]
+
+_TODO_
+
 
 
 [Button]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Button
 [Container]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Container
 [immediate mode]: https://en.wikipedia.org/wiki/Immediate_mode_(computer_graphics)
+[Layer]: https://pkg.go.dev/github.com/blizzy78/ebitenui/input#Layer
 [Layerer]: https://pkg.go.dev/github.com/blizzy78/ebitenui/input#Layerer
 [PreferredSizeLocateableWidget]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#PreferredSizeLocateableWidget
 [Renderer]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Renderer

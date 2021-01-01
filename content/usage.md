@@ -4,8 +4,8 @@ title: Usage
 navbarsection: usage
 ---
 
-Using Ebiten UI
-===============
+How to Use Ebiten UI
+====================
 
 Ebiten UI is a fairly complex and flexible user interface engine. This page explains the concepts used in it.
 
@@ -27,7 +27,7 @@ The entire user interface is constructed as a hierarchy in Ebiten UI:
   the entire user interface. It is also responsible for delivering events throughout the user interface.
 - [Container] is the main type to group things together, for example a row of buttons. Containers may contain
   any number of widgets as well as other Containers. They are responsible for layouting their child widgets.
-- At the lowest level, there are widgets such as [Button] or [LabeledCheckbox].
+- At the lowest level, there are widgets such as [Button] or [Checkbox].
 
 Widget
 ------
@@ -127,9 +127,9 @@ while others are optional. The order of the options usually does not matter. Som
 [9-slice scaling]: https://en.wikipedia.org/wiki/9-slice_scaling
 [AnchorLayout]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#AnchorLayout
 [Button]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Button
+[Checkbox]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Checkbox
 [Container]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Container
 [GridLayout]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#GridLayout
-[LabeledCheckbox]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#LabeledCheckbox
 [Layouter]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Layouter
 [NineSlice]: https://pkg.go.dev/github.com/blizzy78/ebitenui/image#NineSlice
 [retained mode]: https://en.wikipedia.org/wiki/Retained_mode
