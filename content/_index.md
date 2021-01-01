@@ -19,7 +19,7 @@ All graphics used by Ebiten UI can be fully customized, so you can really make y
 
 
 Screenshots
-===========
+-----------
 
 This is the [demo program] of Ebiten UI. Your UI may look very different.
 
