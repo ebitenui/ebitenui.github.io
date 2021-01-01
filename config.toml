@@ -4,6 +4,7 @@ title = "Ebiten UI"
 
 disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "robotsTXT", "404", "sitemap"]
 staticDir = ["static", "static-vendor"]
+publishDir = "docs"
 
 [params]
 alert = "This documentation is currently under construction and may be incomplete or have missing parts."
