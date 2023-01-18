@@ -33,6 +33,6 @@ Ebiten UI is licensed under the MIT license.
 
 
 
-[demo program]: https://github.com/blizzy78/ebitenui/tree/master/_demo
+[demo program]: https://github.com/ebitenui/ebitenui/tree/master/_demo
 [Ebiten]: https://ebiten.org
 [retained mode]: https://en.wikipedia.org/wiki/Retained_mode

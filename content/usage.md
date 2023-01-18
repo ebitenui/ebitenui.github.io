@@ -125,14 +125,14 @@ while others are optional. The order of the options usually does not matter. Som
 
 
 [9-slice scaling]: https://en.wikipedia.org/wiki/9-slice_scaling
-[AnchorLayout]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#AnchorLayout
-[Button]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Button
-[Checkbox]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Checkbox
-[Container]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Container
-[GridLayout]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#GridLayout
-[Layouter]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Layouter
-[NineSlice]: https://pkg.go.dev/github.com/blizzy78/ebitenui/image#NineSlice
+[AnchorLayout]: https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#AnchorLayout
+[Button]: https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#Button
+[Checkbox]: https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#Checkbox
+[Container]: https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#Container
+[GridLayout]: https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#GridLayout
+[Layouter]: https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#Layouter
+[NineSlice]: https://pkg.go.dev/github.com/ebitenui/ebitenui/image#NineSlice
 [retained mode]: https://en.wikipedia.org/wiki/Retained_mode
-[RowLayout]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#RowLayout
-[UI]: https://pkg.go.dev/github.com/blizzy78/ebitenui#UI
-[Widget]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Widget
+[RowLayout]: https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#RowLayout
+[UI]: https://pkg.go.dev/github.com/ebitenui/ebitenui#UI
+[Widget]: https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#Widget

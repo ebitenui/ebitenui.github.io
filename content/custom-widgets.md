@@ -70,12 +70,12 @@ _TODO_
 
 
 
-[Button]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Button
-[Container]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Container
+[Button]: https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#Button
+[Container]: https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#Container
 [immediate mode]: https://en.wikipedia.org/wiki/Immediate_mode_(computer_graphics)
-[Layer]: https://pkg.go.dev/github.com/blizzy78/ebitenui/input#Layer
-[Layerer]: https://pkg.go.dev/github.com/blizzy78/ebitenui/input#Layerer
-[PreferredSizeLocateableWidget]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#PreferredSizeLocateableWidget
-[Renderer]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Renderer
+[Layer]: https://pkg.go.dev/github.com/ebitenui/ebitenui/input#Layer
+[Layerer]: https://pkg.go.dev/github.com/ebitenui/ebitenui/input#Layerer
+[PreferredSizeLocateableWidget]: https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#PreferredSizeLocateableWidget
+[Renderer]: https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#Renderer
 [retained mode]: https://en.wikipedia.org/wiki/Retained_mode
-[Widget]: https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Widget
+[Widget]: https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#Widget

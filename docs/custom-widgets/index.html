@@ -39,11 +39,11 @@
       
       <ul class="navbar-nav">
         <li class="nav-item d-flex">
-          <a class="nav-link" href="https://github.com/blizzy78/ebitenui">
+          <a class="nav-link" href="https://github.com/ebitenui/ebitenui">
             <i class="fab fa-github"></i>
             Source
           </a>
-          <a class="nav-link" href="https://pkg.go.dev/github.com/blizzy78/ebitenui">
+          <a class="nav-link" href="https://pkg.go.dev/github.com/ebitenui/ebitenui">
             <i class="fas fa-book"></i>
             Package Docs
           </a>
@@ -76,15 +76,15 @@ to draw their current state in each GPU frame.</p>
 <p>The basic structure of a widget&rsquo;s implementation is as follows:</p>
 <ol>
 <li>
-<p>Each implementation needs to &ldquo;have&rdquo; a <a href="https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Widget">Widget</a>. For simple &ldquo;inheriting&rdquo; implementations, an already
+<p>Each implementation needs to &ldquo;have&rdquo; a <a href="https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#Widget">Widget</a>. For simple &ldquo;inheriting&rdquo; implementations, an already
 existing widget implementation may be useful, while for completely new implementations Widget itself
 can be used.</p>
 <p>Some examples:</p>
 <ul>
-<li>A new button implementation that is a regular <a href="https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Button">Button</a>, but behaves a bit differently: The new
+<li>A new button implementation that is a regular <a href="https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#Button">Button</a>, but behaves a bit differently: The new
 implementation will use a regular Button as its widget.</li>
 <li>A row of buttons behaving together as a single widget: The widget implementation could use
-<a href="https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Container">Container</a> as its widget, with the Container having regular Buttons as children.</li>
+<a href="https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#Container">Container</a> as its widget, with the Container having regular Buttons as children.</li>
 <li>A completely new widget that draws original images onto the screen: This implementation will use
 Widget directly.</li>
 </ul>
@@ -98,7 +98,7 @@ ButtonOpts.Image. A constructor function and options are not strictly necessary,
 for easy future expansion.</p>
 </li>
 <li>
-<p>Implement interface <a href="https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#PreferredSizeLocateableWidget">PreferredSizeLocateableWidget</a>:</p>
+<p>Implement interface <a href="https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#PreferredSizeLocateableWidget">PreferredSizeLocateableWidget</a>:</p>
 <ul>
 <li>PreferredSize returns the widget&rsquo;s preferred size. This may depend on text being rendered,
 for example.</li>
@@ -108,19 +108,19 @@ for example.</li>
 </li>
 <li>
 <p>(optional) If the implementation is to actually render anything onto the screen, implement interface
-<a href="https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Renderer">Renderer</a>.</p>
+<a href="https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#Renderer">Renderer</a>.</p>
 </li>
 <li>
 <p>(optional) If the implementation fires any events on its own (for example, on a timed basis),
-implement interface <a href="https://pkg.go.dev/github.com/blizzy78/ebitenui/widget#Renderer">Renderer</a> and fire events in the Render method.</p>
+implement interface <a href="https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#Renderer">Renderer</a> and fire events in the Render method.</p>
 </li>
 <li>
 <p>(optional) If it is necessary to block user input from reaching widgets rendered below the widget
-(if overlapping), implement interface <a href="https://pkg.go.dev/github.com/blizzy78/ebitenui/input#Layerer">Layerer</a>.</p>
+(if overlapping), implement interface <a href="https://pkg.go.dev/github.com/ebitenui/ebitenui/input#Layerer">Layerer</a>.</p>
 </li>
 </ol>
 <h2 id="input-layering">Input Layering</h2>
-<p>see <a href="https://pkg.go.dev/github.com/blizzy78/ebitenui/input#Layer">Layer</a></p>
+<p>see <a href="https://pkg.go.dev/github.com/ebitenui/ebitenui/input#Layer">Layer</a></p>
 <p><em>TODO</em></p>
 
       </div>
