@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/fontawesome-free-5.15.1-web/css/all.min.css"/>
   <link rel="stylesheet" href="/css/styles.css"/>
 
-  <title>Usage &ndash; Ebiten UI</title>
+  <title>Core Concepts &ndash; Ebiten UI</title>
 </head>
 
 
@@ -30,7 +30,45 @@
             <a class="nav-link "  href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/usage">Usage</a>
+            <a class="nav-link active" aria-current="page" href="/usage">Core Concepts</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle "  id="containerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Containers</a>
+               <ul class="dropdown-menu" aria-labelledby="containerDropdown">
+                <li><a class="dropdown-item" href="/container">Base Container</a></li>
+                <li><a class="dropdown-item" href="/tabs">Tabs</a></li>
+                <li><a class="dropdown-item" href="/scroll">Scroll</a></li>
+                <li><a class="dropdown-item" href="/window">Window</a></li>
+              </ul>
+            </li>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle "  id="layoutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Layouts</a>
+               <ul class="dropdown-menu" aria-labelledby="layoutDropdown">
+                <li><a class="dropdown-item" href="/anchor_layout">Anchor Layout</a></li>
+                <li><a class="dropdown-item" href="/grid_layout">Grid Layout</a></li>
+                <li><a class="dropdown-item" href="/row_layout">Row Layout</a></li>
+              </ul>
+            </li>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle "  id="widgetDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Widgets</a>
+               <ul class="dropdown-menu" aria-labelledby="widgetDropdown">
+                <li><a class="dropdown-item" href="/button">Button</a></li>
+                <li><a class="dropdown-item" href="/checkbox">Checkbox</a></li>
+                <li><a class="dropdown-item" href="/combobox">Combobox</a></li>
+                <li><a class="dropdown-item" href="/label">Label</a></li>
+                <li><a class="dropdown-item" href="/list">List</a></li>
+                <li><a class="dropdown-item" href="/progressbar">Progress Bar</a></li>
+                <li><a class="dropdown-item" href="/slider">Slider</a></li>
+                <li><a class="dropdown-item" href="/textinput">TextInput</a></li>
+                <li><a class="dropdown-item" href="/textarea">TextArea</a></li>            
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/dnd">Drag and Drop</a></li>
+                <li><a class="dropdown-item" href="/radiogroup">Radiogroup</a></li>
+                <li><a class="dropdown-item" href="/tooltip">Tooltip</a></li>
+              </ul>
+            </li>
           </li>
           <li class="nav-item">
             <a class="nav-link "  href="/custom-widgets">Custom Widgets</a>
@@ -63,7 +101,7 @@
 
     <main>
       <div class="container">
-        <h1 id="how-to-use-ebiten-ui">How to Use Ebiten UI</h1>
+        <h1 id="core-concepts">Core Concepts</h1>
 <p>Ebiten UI is a fairly complex and flexible user interface engine. This page explains the concepts used in it.</p>
 <h2 id="retained-mode">Retained Mode</h2>
 <p>Ebiten UI adopts the &ldquo;<a href="https://en.wikipedia.org/wiki/Retained_mode">retained mode</a>&rdquo; model for user interfaces. This means that calls into the Ebiten UI API,
