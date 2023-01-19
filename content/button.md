@@ -12,7 +12,7 @@ The Button widget is used to trigger actions. It can be used individually or as 
 
 Required Options
 ------
-* Images - The button widget requires a [ButtonImage](https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#ButtonImage) object which contains 4 separate NineSlize images
+* Images - The button widget requires a [ButtonImage](https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#ButtonImage) object which contains 4 separate NineSlice images
     * Idle - Required - Shown when not active
     * Hover - Required - Shown when cursor is over the bbutton
     * Pressed - Required - Shown when the user clicks the button OR if it a selected member of a [RadioGroup](/radiogroup)
