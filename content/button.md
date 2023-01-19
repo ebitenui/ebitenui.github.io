@@ -23,7 +23,10 @@ Common Options
 1. Text - The text shown on the button. This requires the text, a font face, and a [ButtonTextColor](https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#ButtonTextColor) object. The ButtonTextColor has two colors
     * Idle - Required - Used when button is active
     * Disabled - Required if disabled - Used when button is disabled
-2. TextPadding - This takes an [Insets](https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#Insets) object to specify the the space to add to the text size for the button.
+2. TextPadding - This takes an [Insets](https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#Insets) object to specify the space in pixels to add to the text size of the button.
+
+	 ![Insets](/insets.png)
+
 3. ClickedHandler - A callback that is fired when the button is pressed and released
 
 Example
