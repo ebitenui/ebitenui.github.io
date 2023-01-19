@@ -6,7 +6,7 @@ navbarsection: home
 Ebiten UI
 =========
 
-**A user interface engine and widget library for [Ebiten]**
+**A user interface engine and widget library for [Ebitengine]**
 
 Ebiten UI is an extension to Ebiten that provides an engine to render a complete user interface,
 with widgets such as buttons, lists, combo boxes, and so on. It uses the [retained mode] model.
@@ -26,13 +26,27 @@ This is the [demo program] of Ebiten UI. Your UI may look very different.
 ![Screenshots](ebiten-ui.gif)
 
 
+Social Media
+-------
+* [Discord](https://discord.gg/ujEeeHgptU)
+
+* [Reddit](https://www.reddit.com/r/dmndev/)
+
+
 License
 -------
 
-Ebiten UI is licensed under the MIT license.
+* Ebiten UI is licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+Maintainers
+-------
+* Currently maintained by Mark Carpenter <mark@dmn-dev.com>
+* Originally written by Maik Schreiber <blizzy@blizzy.de>
+
 
 
 
 [demo program]: https://github.com/ebitenui/ebitenui/tree/master/_demo
-[Ebiten]: https://ebiten.org
+[Ebitengine]: https://ebitengine.org/
 [retained mode]: https://en.wikipedia.org/wiki/Retained_mode

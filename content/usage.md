@@ -1,10 +1,10 @@
 ---
 layout: docs
-title: Usage
+title: Core Concepts
 navbarsection: usage
 ---
 
-How to Use Ebiten UI
+Core Concepts
 ====================
 
 Ebiten UI is a fairly complex and flexible user interface engine. This page explains the concepts used in it.
