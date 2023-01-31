@@ -30,7 +30,7 @@ Social Media
 -------
 * [Discord](https://discord.gg/ujEeeHgptU)
 
-* [Reddit](https://www.reddit.com/r/dmndev/)
+* [Reddit](https://www.reddit.com/r/birdmtndev/)
 
 
 License
@@ -41,12 +41,12 @@ License
 
 Maintainers
 -------
-* Currently maintained by Mark Carpenter <mark@dmn-dev.com>
+* Currently maintained by Mark Carpenter <admin@bird-mtn.dev>
 * Originally written by Maik Schreiber <blizzy@blizzy.de>
 
 
 
 
-[demo program]: https://github.com/ebitenui/ebitenui/tree/master/_demo
+[demo program]: https://github.com/ebitenui/ebitenui/tree/master/_examples/demo
 [Ebitengine]: https://ebitengine.org/
 [retained mode]: https://en.wikipedia.org/wiki/Retained_mode
