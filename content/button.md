@@ -14,7 +14,7 @@ Required Options
 ------
 * Images - The button widget requires a [ButtonImage](https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#ButtonImage) object which contains 4 separate NineSlice images
     * Idle - Required - Shown when not active
-    * Hover - Required - Shown when cursor is over the bbutton
+    * Hover - Required - Shown when cursor is over the button
     * Pressed - Required - Shown when the user clicks the button OR if it a selected member of a [RadioGroup](/radiogroup)
     * Disabled - Required if disabled - Shown if the button has been disabled
 
@@ -27,7 +27,14 @@ Common Options
 
 	 ![Insets](/insets.png)
 
-3. ClickedHandler - A callback that is fired when the button is pressed and released
+Event Handlers
+------
+1. ClickedHandler - A callback that is fired when the button is pressed and released with these [args](https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#ButtonClickedEventArgs)
+2. PressedHandler - A callback that is fired when the button is pressed with these [args](https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#ButtonPressedEventArgs)
+3. ReleasedHandler - A callback that is fired when the button is released with these [args](https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#ButtonReleasedEventArgs)
+4. CursorEnteredHandler - A callback that is fired when the cursor enters the button's bounds with these [args](https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#ButtonHoverEventArgs)
+5. CursorExitedHandler - A callback that is fired when the cursor exits the botton's bounds with these [args](https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#ButtonHoverEventArgs)
+6. StateChangeHandler - A callback that is fired when the button's state has changed (when button is a part of a radiogroup) with these [args](https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#ButtonChangedEventArgs)
 
 Example
 ------
@@ -35,34 +42,14 @@ Example
 
 Code
 -------
+See full example here: [https://github.com/ebitenui/ebitenui/blob/master/_examples/widget_demos/button/main.go](https://github.com/ebitenui/ebitenui/blob/master/_examples/widget_demos/button/main.go)
+
 ~~~go
-package main
-
-import (
-	"image/color"
-	"log"
-
-	"github.com/ebitenui/ebitenui"
-	"github.com/ebitenui/ebitenui/image"
-	"github.com/ebitenui/ebitenui/widget"
-	"github.com/golang/freetype/truetype"
-	"github.com/hajimehoshi/ebiten/v2"
-	"golang.org/x/image/font"
-	"golang.org/x/image/font/gofont/goregular"
-)
-
-// Game object used by ebiten
-type game struct {
-	ui *ebitenui.UI
-}
-
-func main() {
-	// load images for button states: idle, hover, and pressed
+	// load images for button
 	buttonImage, _ := loadButtonImage()
 
 	// load button text font
 	face, _ := loadFont(20)
-	defer face.Close()
 
 	// construct a new container that serves as the root of the UI hierarchy
 	rootContainer := widget.NewContainer(
@@ -109,43 +96,8 @@ func main() {
 	// add the button as a child of the container
 	rootContainer.AddChild(button)
 
-	// construct the UI
-	ui := ebitenui.UI{
-		Container: rootContainer,
-	}
+....
 
-	// Ebiten setup
-	ebiten.SetWindowSize(400, 400)
-	ebiten.SetWindowTitle("Ebiten UI Scaffold")
-
-	game := game{
-		ui: &ui,
-	}
-
-	// run Ebiten main loop
-	err := ebiten.RunGame(&game)
-	if err != nil {
-		log.Println(err)
-	}
-}
-
-// Layout implements Game.
-func (g *game) Layout(outsideWidth int, outsideHeight int) (int, int) {
-	return outsideWidth, outsideHeight
-}
-
-// Update implements Game.
-func (g *game) Update() error {
-	// update the UI
-	g.ui.Update()
-	return nil
-}
-
-// Draw implements Ebiten's Draw method.
-func (g *game) Draw(screen *ebiten.Image) {
-	// draw the UI onto the screen
-	g.ui.Draw(screen)
-}
 
 func loadButtonImage() (*widget.ButtonImage, error) {
 	idle := image.NewNineSliceColor(color.RGBA{R: 170, G: 170, B: 180, A: 255})

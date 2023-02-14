@@ -36,7 +36,7 @@
             <a class="nav-link dropdown-toggle "  id="containerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Containers</a>
                <ul class="dropdown-menu" aria-labelledby="containerDropdown">
                 <li><a class="dropdown-item" href="/container">Base Container</a></li>
-                <li><a class="dropdown-item" href="/tabs">Tabs</a></li>
+                <li><a class="dropdown-item" href="/tabbook">TabBook</a></li>
                 <li><a class="dropdown-item" href="/scroll">Scroll</a></li>
                 <li><a class="dropdown-item" href="/window">Window</a></li>
               </ul>
@@ -108,7 +108,7 @@
 <li>Images - The button widget requires a <a href="https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#ButtonImage">ButtonImage</a> object which contains 4 separate NineSlice images
 <ul>
 <li>Idle - Required - Shown when not active</li>
-<li>Hover - Required - Shown when cursor is over the bbutton</li>
+<li>Hover - Required - Shown when cursor is over the button</li>
 <li>Pressed - Required - Shown when the user clicks the button OR if it a selected member of a <a href="/radiogroup">RadioGroup</a></li>
 <li>Disabled - Required if disabled - Shown if the button has been disabled</li>
 </ul>
@@ -127,40 +127,25 @@
 <p>TextPadding - This takes an <a href="https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#Insets">Insets</a> object to specify the space in pixels to add to the text size of the button.</p>
 <p><img src="/insets.png" alt="Insets"></p>
 </li>
-<li>
-<p>ClickedHandler - A callback that is fired when the button is pressed and released</p>
-</li>
+</ol>
+<h2 id="event-handlers">Event Handlers</h2>
+<ol>
+<li>ClickedHandler - A callback that is fired when the button is pressed and released with these <a href="https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#ButtonClickedEventArgs">args</a></li>
+<li>PressedHandler - A callback that is fired when the button is pressed with these <a href="https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#ButtonPressedEventArgs">args</a></li>
+<li>ReleasedHandler - A callback that is fired when the button is released with these <a href="https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#ButtonReleasedEventArgs">args</a></li>
+<li>CursorEnteredHandler - A callback that is fired when the cursor enters the button&rsquo;s bounds with these <a href="https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#ButtonHoverEventArgs">args</a></li>
+<li>CursorExitedHandler - A callback that is fired when the cursor exits the botton&rsquo;s bounds with these <a href="https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#ButtonHoverEventArgs">args</a></li>
+<li>StateChangeHandler - A callback that is fired when the button&rsquo;s state has changed (when button is a part of a radiogroup) with these <a href="https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#ButtonChangedEventArgs">args</a></li>
 </ol>
 <h2 id="example">Example</h2>
 <p><img src="/button.gif" alt="Example"></p>
 <h2 id="code">Code</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
-</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;image/color&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;log&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;github.com/ebitenui/ebitenui&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;github.com/ebitenui/ebitenui/image&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;github.com/ebitenui/ebitenui/widget&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;github.com/golang/freetype/truetype&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;github.com/hajimehoshi/ebiten/v2&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;golang.org/x/image/font&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;golang.org/x/image/font/gofont/goregular&#34;</span>
-</span></span><span style="display:flex;"><span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// Game object used by ebiten
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">game</span> <span style="color:#66d9ef">struct</span> {
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">ui</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">ebitenui</span>.<span style="color:#a6e22e">UI</span>
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// load images for button states: idle, hover, and pressed
+<p>See full example here: <a href="https://github.com/ebitenui/ebitenui/blob/master/_examples/widget_demos/button/main.go">https://github.com/ebitenui/ebitenui/blob/master/_examples/widget_demos/button/main.go</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>	<span style="color:#75715e">// load images for button
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">buttonImage</span>, <span style="color:#a6e22e">_</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">loadButtonImage</span>()
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// load button text font
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">face</span>, <span style="color:#a6e22e">_</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">loadFont</span>(<span style="color:#ae81ff">20</span>)
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">defer</span> <span style="color:#a6e22e">face</span>.<span style="color:#a6e22e">Close</span>()
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// construct a new container that serves as the root of the UI hierarchy
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">rootContainer</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">widget</span>.<span style="color:#a6e22e">NewContainer</span>(
@@ -207,43 +192,8 @@
 </span></span><span style="display:flex;"><span>	<span style="color:#75715e">// add the button as a child of the container
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">rootContainer</span>.<span style="color:#a6e22e">AddChild</span>(<span style="color:#a6e22e">button</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// construct the UI
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">ui</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">ebitenui</span>.<span style="color:#a6e22e">UI</span>{
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">Container</span>: <span style="color:#a6e22e">rootContainer</span>,
-</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>.
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Ebiten setup
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">ebiten</span>.<span style="color:#a6e22e">SetWindowSize</span>(<span style="color:#ae81ff">400</span>, <span style="color:#ae81ff">400</span>)
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">ebiten</span>.<span style="color:#a6e22e">SetWindowTitle</span>(<span style="color:#e6db74">&#34;Ebiten UI Scaffold&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">game</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">game</span>{
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">ui</span>: <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">ui</span>,
-</span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// run Ebiten main loop
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">ebiten</span>.<span style="color:#a6e22e">RunGame</span>(<span style="color:#f92672">&amp;</span><span style="color:#a6e22e">game</span>)
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">err</span>)
-</span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// Layout implements Game.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">g</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">game</span>) <span style="color:#a6e22e">Layout</span>(<span style="color:#a6e22e">outsideWidth</span> <span style="color:#66d9ef">int</span>, <span style="color:#a6e22e">outsideHeight</span> <span style="color:#66d9ef">int</span>) (<span style="color:#66d9ef">int</span>, <span style="color:#66d9ef">int</span>) {
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">outsideWidth</span>, <span style="color:#a6e22e">outsideHeight</span>
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// Update implements Game.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">g</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">game</span>) <span style="color:#a6e22e">Update</span>() <span style="color:#66d9ef">error</span> {
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// update the UI
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">g</span>.<span style="color:#a6e22e">ui</span>.<span style="color:#a6e22e">Update</span>()
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// Draw implements Ebiten&#39;s Draw method.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">g</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">game</span>) <span style="color:#a6e22e">Draw</span>(<span style="color:#a6e22e">screen</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">ebiten</span>.<span style="color:#a6e22e">Image</span>) {
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// draw the UI onto the screen
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">g</span>.<span style="color:#a6e22e">ui</span>.<span style="color:#a6e22e">Draw</span>(<span style="color:#a6e22e">screen</span>)
-</span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">loadButtonImage</span>() (<span style="color:#f92672">*</span><span style="color:#a6e22e">widget</span>.<span style="color:#a6e22e">ButtonImage</span>, <span style="color:#66d9ef">error</span>) {
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">idle</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">image</span>.<span style="color:#a6e22e">NewNineSliceColor</span>(<span style="color:#a6e22e">color</span>.<span style="color:#a6e22e">RGBA</span>{<span style="color:#a6e22e">R</span>: <span style="color:#ae81ff">170</span>, <span style="color:#a6e22e">G</span>: <span style="color:#ae81ff">170</span>, <span style="color:#a6e22e">B</span>: <span style="color:#ae81ff">180</span>, <span style="color:#a6e22e">A</span>: <span style="color:#ae81ff">255</span>})
