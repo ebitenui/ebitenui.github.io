@@ -25,7 +25,7 @@ Common Options
     * Disabled - Required if disabled - Used when button is disabled
 2. TextPadding - This takes an [Insets](https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#Insets) object to specify the space in pixels to add to the text size of the button.
 
-	 ![Insets](/insets.png)
+	 ![Insets](/images/insets.png)
 
 Event Handlers
 ------
@@ -38,7 +38,7 @@ Event Handlers
 
 Example
 ------
-![Example](/button.gif)
+![Example](/images/button.gif)
 
 Code
 -------

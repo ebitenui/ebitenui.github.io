@@ -49,7 +49,7 @@ Methods
 
 Example
 ------
-![Example](/tabbook.gif)
+![Example](/images/tabbook.gif)
 
 
 Code

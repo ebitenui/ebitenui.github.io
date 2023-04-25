@@ -18,13 +18,10 @@ All graphics used by Ebiten UI can be fully customized, so you can really make y
 - [Implementing Custom Widgets](/custom-widgets)
 
 
-Screenshots
+Live Demo
 -----------
 
-This is the [demo program] of Ebiten UI. Your UI may look very different.
-
-![Screenshots](ebiten-ui.gif)
-
+<iframe src="wasm/demo.html" height="800" width="1000" title="Live Demo" scrolling="no"></iframe>
 
 Social Media
 -------
