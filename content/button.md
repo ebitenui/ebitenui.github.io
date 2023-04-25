@@ -36,9 +36,12 @@ Event Handlers
 5. CursorExitedHandler - A callback that is fired when the cursor exits the botton's bounds with these [args](https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#ButtonHoverEventArgs)
 6. StateChangeHandler - A callback that is fired when the button's state has changed (when button is a part of a radiogroup) with these [args](https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#ButtonChangedEventArgs)
 
-Example
-------
-![Example](/images/button.gif)
+
+Live Demo
+-----------
+
+<iframe src="/wasm/button.html" height="400" width="400" title="Live Demo" scrolling="no"></iframe>
+
 
 Code
 -------

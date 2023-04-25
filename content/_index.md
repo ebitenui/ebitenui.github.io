@@ -18,7 +18,7 @@ All graphics used by Ebiten UI can be fully customized, so you can really make y
 - [Implementing Custom Widgets](/custom-widgets)
 
 
-Live Demo - Button
+Live Demo
 -----------
 
 <iframe src="/wasm/primary_demo.html" height="800" width="1000" title="Live Demo" scrolling="no"></iframe>
