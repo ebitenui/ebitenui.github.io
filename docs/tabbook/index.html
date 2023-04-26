@@ -48,6 +48,7 @@
                 <li><a class="dropdown-item" href="/anchor_layout">Anchor Layout</a></li>
                 <li><a class="dropdown-item" href="/grid_layout">Grid Layout</a></li>
                 <li><a class="dropdown-item" href="/row_layout">Row Layout</a></li>
+                <li><a class="dropdown-item" href="/stacked_layout">Stacked Layout</a></li>
               </ul>
             </li>
           </li>
@@ -67,6 +68,7 @@
                 <li><a class="dropdown-item" href="/dnd">Drag and Drop</a></li>
                 <li><a class="dropdown-item" href="/radiogroup">Radiogroup</a></li>
                 <li><a class="dropdown-item" href="/tooltip">Tooltip</a></li>
+                <li><a class="dropdown-item" href="/contextmenu">Context Menu</a></li>
               </ul>
             </li>
           </li>
@@ -142,8 +144,8 @@ This label is what is displayed in the tab. By default the tab container is set 
 <li>func (t *TabBook) SetTab(tab *TabBookTab) - Sets the current visible Tab</li>
 <li>func (t *TabBook) Tab() *TabBookTab - Gets the current visible Tab</li>
 </ul>
-<h2 id="example">Example</h2>
-<p><img src="/images/tabbook.gif" alt="Example"></p>
+<h2 id="live-demo">Live Demo</h2>
+<iframe src="/wasm_control/tabbook.html" height="400" width="400" title="Live Demo" scrolling="no"></iframe>
 <h2 id="code">Code</h2>
 <p>See full example here: <a href="https://github.com/ebitenui/ebitenui/blob/master/_examples/widget_demos/tabbook/main.go">https://github.com/ebitenui/ebitenui/blob/master/_examples/widget_demos/tabbook/main.go</a></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>	<span style="color:#75715e">// load images for button states: idle, hover, and pressed

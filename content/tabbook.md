@@ -47,9 +47,10 @@ Methods
 * func (t *TabBook) SetTab(tab *TabBookTab) - Sets the current visible Tab
 * func (t *TabBook) Tab() *TabBookTab - Gets the current visible Tab
 
-Example
-------
-![Example](/images/tabbook.gif)
+Live Demo
+-----------
+
+<iframe src="/wasm_control/tabbook.html" height="400" width="400" title="Live Demo" scrolling="no"></iframe>
 
 
 Code
