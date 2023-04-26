@@ -40,7 +40,7 @@ Event Handlers
 Live Demo
 -----------
 
-<iframe src="/wasm/button.html" height="400" width="400" title="Live Demo" scrolling="no"></iframe>
+<iframe src="/wasm_control/button.html" height="400" width="400" title="Live Demo" scrolling="no"></iframe>
 
 
 Code
