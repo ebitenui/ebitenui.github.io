@@ -7,7 +7,7 @@ navbarsection: container
 How to Use [TabBooks](https://pkg.go.dev/github.com/ebitenui/ebitenui/widget#TabBook)
 ====================
 
-The Tabbook container is used to create a stack of tabs that can be switched between by the use
+The Tabbook container is used to create a stack of tabs that can be switched between by the user
 
 Tabs
 ------
