@@ -10,4 +10,4 @@ publishDir = "docs"
 alert = "This documentation is currently under construction and may be incomplete or have missing parts."
 
 [markup.goldmark.renderer]
-unsafe= true
+unsafe = true
