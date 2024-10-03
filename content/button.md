@@ -116,17 +116,16 @@ func loadButtonImage() (*widget.ButtonImage, error) {
 	}, nil
 }
 
-func loadFont(size float64) (font.Face, error) {
-	ttfFont, err := truetype.Parse(goregular.TTF)
+func loadFont(size float64) (text.Face, error) {
+	s, err := text.NewGoTextFaceSource(bytes.NewReader(goregular.TTF))
 	if err != nil {
 		return nil, err
 	}
 
-	return truetype.NewFace(ttfFont, &truetype.Options{
-		Size:    size,
-		DPI:     72,
-		Hinting: font.HintingFull,
-	}), nil
+	return &text.GoTextFace{
+		Source: s,
+		Size:   size,
+	}, nil
 }
 
 ~~~
