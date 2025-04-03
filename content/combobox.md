@@ -7,7 +7,7 @@ navbarsection: widget
 How to Use Comboboxes
 ====================
 
-Live DemoA
+Live Demo
 -----------
 
 <iframe src="/wasm_control/combobox.html" height="400" width="400" title="Live Demo" scrolling="no"></iframe>
