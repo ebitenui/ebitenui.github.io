@@ -1,0 +1,3 @@
+{{ $width := default "480" (.Get "width") }}
+{{ $height := default "320" (.Get "height") }}
+<iframe srcdoc="{{ .Inner | safeHTMLAttr }}" width="{{ $width }}" height="{{ $height }}" scrolling="no" loading="lazy"></iframe>

@@ -1,0 +1,87 @@
+/* my-custom-variant */
+:root {
+  --PRIMARY-color: #131a22ff;
+  /* brand primary color */
+  --ACCENT-color: #5a7d93;
+  /* brand accent color, used for search highlights */
+  --MAIN-LINK-color: #1f8dd3ff;
+  /* link color of content */
+  --MAIN-LINK-HOVER-color: #1f8dd3ff;
+  /* hoverd link color of content */
+  --MAIN-BG-color: #131a22ff;
+  /* background color of content */
+  --MAIN-TEXT-color: #c0e1f3ff;
+  /* text color of content and h1 titles */
+  --MAIN-TITLES-TEXT-color: rgba(255, 255, 255, 1);
+  /* text color of h2-h6 titles and transparent box titles */
+  --CODE-theme: code;
+  /* name of the chroma stylesheet file */
+  --CODE-BLOCK-color: rgba(248, 248, 242, 1);
+  /* fallback text color of block code; should be adjusted to your selected chroma style */
+  --CODE-BLOCK-BG-color: #202e3b;
+  /* fallback background color of block code; should be adjusted to your selected chroma style */
+  --CODE-BLOCK-BORDER-color: #5a7d93;
+  /* border color of block code */
+  --CODE-INLINE-color: #4a8cb6;
+  /* text color of inline code */
+  --CODE-INLINE-BG-color: #131a22ff;
+  /* background color of inline code */
+  --CODE-INLINE-BORDER-color: #131a22ff;
+  /* border color of inline code */
+  --BROWSER-theme: dark;
+  /* name of the theme for browser scrollbars of the main section */
+  --MERMAID-theme: dark;
+  /* name of the default Mermaid theme for this variant, can be overridden in hugo.toml */
+  --OPENAPI-theme: dark;
+  /* name of the default OpenAPI theme for this variant, can be overridden in hugo.toml */
+  --OPENAPI-CODE-theme: obsidian;
+  /* name of the default OpenAPI code theme for this variant, can be overridden in hugo.toml */
+  --MENU-HOME-LINK-color: #c0e1f3ff;
+  /* home button color if configured */
+  --MENU-HOME-LINK-HOVER-color: #304457ff;
+  /* hoverd home button color if configured */
+  --MENU-SEARCH-color: rgba(224, 224, 224, 1);
+  /* text and icon color of search box */
+  --MENU-SEARCH-BG-color: #202e3bff;
+  /* background color of search box */
+  --MENU-SEARCH-BORDER-color: #5a7d93ff;
+  /* border color of search box */
+  --MENU-SECTIONS-BG-color: #131a22ff;
+  /* background of the menu; this is NOT just a color value but can be a complete CSS background definition including gradients, etc. */
+  --MENU-SECTIONS-ACTIVE-BG-color: #131a22ff;
+  /* background color of the active menu section */
+  --MENU-SECTIONS-LINK-color: #c0e1f3ff;
+  /* link color of menu topics */
+  --MENU-SECTIONS-LINK-HOVER-color: #c0e1f3ff;
+  /* hoverd link color of menu topics */
+  --MENU-SECTION-ACTIVE-CATEGORY-color: #1f8dd3ff;
+  /* text color of the displayed menu topic */
+  --MENU-SECTION-SEPARATOR-color: #131a22ff;
+  /* separator color between menu sections and menu footer */
+  --MENU-VISITED-color: #1f8dd3ff;
+  /* icon color of visited menu topics if configured */
+  --BOX-CAPTION-color: rgba(240, 240, 240, 1);
+  /* text color of colored box titles */
+  --BOX-BG-color: rgba(20, 20, 20, 1);
+  /* background color of colored boxes */
+  --BOX-TEXT-color: #c0e1f3ff;
+  /* text color of colored box content */
+  --BOX-BLUE-color: #90b8d2ff;
+  /* background color of blue boxes */
+  --BOX-BLUE-TEXT-color: #5a7d93ff;
+  /* text color of blue boxes */
+  --BOX-CYAN-color: #5a7d93ff;
+  /* background color of cyan boxes */
+  --BOX-GREEN-color: #5a7d93ff;
+  /* background color of green boxes */
+  --BOX-TIP-color: #5a7d93ff;
+  /* background color of tip boxes */
+  --BOX-MAGENTA-color: #5a7d93ff;
+  /* background color of magenta boxes */
+  --BOX-MAGENTA-TEXT-color: #5a7d93ff;
+  /* text color of magenta boxes */
+  --BOX-ORANGE-color: #5a7d93ff;
+  /* background color of orange boxes */
+  --BOX-RED-color: #125178ff;
+  /* background color of red boxes */
+}

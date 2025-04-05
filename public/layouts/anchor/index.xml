@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anchor - Ebiten UI</title>
+    <link>http://localhost:36307/eui/layouts/anchor/index.html</link>
+    <description>Anchor layout allows the child containers to be anchored to a specific constraint.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:36307/eui/layouts/anchor/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

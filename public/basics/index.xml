@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Basics - Ebiten UI</title>
+    <link>http://localhost:36307/eui/basics/index.html</link>
+    <description>This guide will introduce you step by step to the basics of the library and teach you how to use all the main tools.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Oct 2024 19:45:29 +0300</lastBuildDate>
+    <atom:link href="http://localhost:36307/eui/basics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Container &amp; layouts</title>
+      <link>http://localhost:36307/eui/basics/container-layouts/index.html</link>
+      <pubDate>Fri, 04 Oct 2024 19:45:29 +0300</pubDate>
+      <guid>http://localhost:36307/eui/basics/container-layouts/index.html</guid>
+      <description>The most basic way to present the user interface in an application is to break it up into nested containers with different layouts, inside which widgets are located for interaction.</description>
+    </item>
+  </channel>
+</rss>
