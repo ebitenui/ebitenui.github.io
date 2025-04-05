@@ -1,6 +1,5 @@
----
-layout: docs
-title: "{{ replace .Name "-" " " | title }}"
-navbarsection: xxx
----
-
++++
+title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+date = {{ .Date }}
+draft = true
++++

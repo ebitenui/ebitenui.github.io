@@ -1,0 +1,37 @@
+{{ $src := .Get "src" }}
+
+<!DOCTYPE html>
+<head>
+    <style>
+        body {
+            background-color: #131a22ff;
+        }
+        p {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            margin: 0;
+            z-index: -100;
+            background: url(images/loader.svg) center center no-repeat;
+        }
+    </style>
+</head>
+<body>
+	<p id="loader"></p>
+	<script src="wasm/exec.js"></script>
+	<script>
+		async function loadGame() {
+			const go = new Go();
+			const response = await fetch("{{ $src }}");
+			const buffer = await response.arrayBuffer();
+			const obj = await WebAssembly.instantiate(buffer, go.importObject);
+			await new Promise(r => setTimeout(r, 500));
+			go.run(obj.instance);
+			document.getElementById("loader").style.display = "none";
+		}
+		loadGame();
+	</script>
+</body>

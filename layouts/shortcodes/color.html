@@ -1,0 +1,23 @@
+{{ $name := .Get 0 }}
+{{ $color := "" }}
+
+{{ if eq $name "Indianred" }}
+{{ $color = "#cd5c5c" }}
+{{ else if eq $name "Goldenrod" }}
+{{ $color = "#daa520" }}
+{{ else if eq $name "Steelblue" }}
+{{ $color = "#4682b4" }}
+{{ else if eq $name "Mediumseagreen" }}
+{{ $color = "#3cb371" }}
+{{ else if eq $name "Darkslategray" }}
+{{ $color = "#2f4f4f" }}
+{{ else if eq $name "Gainsboro" }}
+{{ $color = "#dcdcdc" }}
+{{ else }}
+{{ $color = "#000000" }}
+{{ end }}
+
+<span style="display: inline-block">
+    <i class="fa-solid fa-circle" style="display: inline; color: {{ $color }}"></i>
+    <code style="display: inline;">{{ $name }}</code>
+</span>

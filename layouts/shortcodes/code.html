@@ -1,0 +1,38 @@
+{{ $file := .Get "src" }}
+{{ $id := .Get "id" }}
+{{ $lang := .Get "lang" }}
+{{ $content := readFile $file }}
+
+<!-- captures the text between start and end tag -->
+{{ $blockPattern := printf `(?s)^.*?\n?(\s*)// START %s\s*\n(.*?)\n\s*// END %s\s*\n` $id $id }}
+<!-- captures all start and end tags -->
+{{ $tagPattern := printf `(^|\n)\s*// (SKIP-)?(START|END)\s+\w+` }}
+<!-- captures all skip tags -->
+{{ $skipPattern := printf `(?s)(\s*\/\/ SKIP-START %s\s*\n.*?\n\s*\/\/ SKIP-END %s)` $id $id }}
+
+<!-- find a matching block (in fact this finds all with same $id but only uses the first one ) -->
+{{ with findRESubmatch $blockPattern $content }}
+<!-- always an array, so get the first match -->
+{{ with index . 0 }}
+<!-- 
+now the . is the array of matches
+IDX 0 : full text
+IDX 1 : whitespace indent before START tag
+IDX 2 : the code without START and END tag lines
+-->
+
+<!-- create a pattern for the indentation to be removed -->
+{{ $indentRemovePattern := printf `(?s)(^|\n)%s` (index . 1) }}
+<!-- remove all skip tags -->
+{{ $snippet := replaceRE $skipPattern "" (index . 2) }}
+<!-- remove all nested tags -->
+{{ $snippet := replaceRE $tagPattern "" $snippet }}
+<!-- remove indentation -->
+{{ $snippet = replaceRE $indentRemovePattern "$1" $snippet }}
+<!-- highlight (trim just for safety) -->
+{{ highlight (trim $snippet " \t\n" ) $lang "" }}
+{{ end }}
+
+{{ else }}
+<p>No snippet found for id "{{ $id }}"</p>
+{{ end }}
