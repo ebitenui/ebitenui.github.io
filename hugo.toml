@@ -1,0 +1,85 @@
+baseURL = 'https://sedyh.github.io/eui/'
+languageCode = 'en-us'
+title = 'Ebiten UI'
+
+[module]
+  [[module.imports]]
+    path = 'github.com/McShelby/hugo-theme-relearn'
+
+[params]
+  additionalContentLanguage = ['en']
+  alwaysopen = ''
+  breadcrumbSeparator = '>'
+  collapsibleMenu = true
+  customMathJaxURL = ''
+  customMermaidURL = ''
+  customOpenapiURL = ''
+  disableAnchorCopy = false
+  disableAnchorScrolling = false
+  disableAssetsBusting = false
+  disableBreadcrumb = false
+  disableDefaultRelref = false
+  disableExplicitIndexURLs = false
+  disableGeneratorVersion = false
+  disableHoverBlockCopyToClipBoard = false
+  disableInlineCopyToClipBoard = true
+  disableLandingPageButton = false
+  disableLanguageSwitchingButton = false
+  disableNextPrev = false
+  disableRandomIds = false
+  disableRootBreadcrumb = true
+  disableSearch = false
+  disableSearchHiddenPages = false
+  disableSeoHiddenPages = true
+  disableShortcutsTitle = false
+  disableTagHiddenPages = false
+  disableTermBreadcrumbs = false
+  disableToc = false
+  editURL = 'https://github.com/sedyh/eui/edit/main/content/${FilePath}'
+  externalLinkTarget = '_self'
+  highlightWrap = false
+  images = ['images/hero.png']
+  mathJaxInitialize = '{}'
+  mermaidInitialize = '{ "securityLevel": "loose" }'
+  mermaidZoom = true
+  ordersectionsby = 'weight'
+  showVisitedLinks = false
+  titleSeparator = '-'
+
+  [params.author]
+    name = 'sedyh'
+
+  [params.image]
+    errorlevel = 'error'
+
+  [params.imageEffects]
+    border = false
+    lazy = false
+    lightbox = false
+    shadow = false
+
+  [params.include]
+    errorlevel = 'error'
+
+  [params.link]
+    errorlevel = 'error'
+
+  [params.openapi]
+    errorlevel = 'error'
+
+  [params.social]
+    facebook_admin = ''
+    twitter = ''
+
+  [[params.themeVariant]]
+    identifier = 'dark'
+
+[markup]
+  [markup.highlight]
+    lineNumbersInTable = false
+    lineNos = true
+    noClasses = false
+  [markup.goldmark.renderHooks.image]
+    enableDefault = true
+  [markup.goldmark.renderer]
+    unsafe = true
