@@ -167,7 +167,7 @@ Responsible for setting multiline text on a button.
 
 Responsible for processing text with BBCode. 
 
-The only tag currently supported is `[color=][/color]` (without the `#`).
+The only tag currently supported is `[color=#][/color]`.
 
 {{< tabs title="Enabled:" style="transparent" color="#131a22ff" >}}
 

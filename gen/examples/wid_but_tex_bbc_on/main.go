@@ -40,17 +40,17 @@ func NewGame() *Game {
 		// SKIP-END this
 		widget.ButtonOpts.TextProcessBBCode(true),
 		widget.ButtonOpts.TextLabel(""+
-			"[color=FF0000]M[/color]"+
-			"[color=E70017]u[/color]"+
-			"[color=D0002E]l[/color]"+
-			"[color=B90045]t[/color]"+
-			"[color=A2005C]i[/color]"+
-			"[color=8B0073]p[/color]"+
-			"[color=73008B]l[/color]"+
-			"[color=5C00A2]a[/color]"+
-			"[color=4500B9]y[/color]"+
-			"[color=2E00D0]e[/color]"+
-			"[color=1700E7]r[/color]",
+			"[color=#FF0000]M[/color]"+
+			"[color=#E70017]u[/color]"+
+			"[color=#D0002E]l[/color]"+
+			"[color=#B90045]t[/color]"+
+			"[color=#A2005C]i[/color]"+
+			"[color=#8B0073]p[/color]"+
+			"[color=#73008B]l[/color]"+
+			"[color=#5C00A2]a[/color]"+
+			"[color=#4500B9]y[/color]"+
+			"[color=#2E00D0]e[/color]"+
+			"[color=#1700E7]r[/color]",
 		),
 		// SKIP-START this
 		widget.ButtonOpts.WidgetOpts(
