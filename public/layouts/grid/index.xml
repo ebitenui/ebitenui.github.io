@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Grid - Ebiten UI</title>
-    <link>http://localhost:36307/eui/layouts/grid/index.html</link>
+    <link>http://localhost:1313/layouts/grid/index.html</link>
     <description>Grid layout puts all child containers in an even grid, wrapping each row based on the number of columns.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:36307/eui/layouts/grid/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/layouts/grid/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Layouts - Ebiten UI</title>
-    <link>http://localhost:36307/eui/layouts/index.html</link>
+    <link>http://localhost:1313/layouts/index.html</link>
     <description>The library allows you to compose containers in many different ways, and this chapter will tell you about each of them.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 04 Oct 2024 19:45:29 +0300</lastBuildDate>
-    <atom:link href="http://localhost:36307/eui/layouts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/layouts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Anchor</title>
-      <link>http://localhost:36307/eui/layouts/anchor/index.html</link>
+      <link>http://localhost:1313/layouts/anchor/index.html</link>
       <pubDate>Fri, 04 Oct 2024 19:45:29 +0300</pubDate>
-      <guid>http://localhost:36307/eui/layouts/anchor/index.html</guid>
+      <guid>http://localhost:1313/layouts/anchor/index.html</guid>
       <description>Anchor layout allows the child containers to be anchored to a specific constraint.</description>
     </item>
     <item>
       <title>Row</title>
-      <link>http://localhost:36307/eui/layouts/row/index.html</link>
+      <link>http://localhost:1313/layouts/row/index.html</link>
       <pubDate>Fri, 04 Oct 2024 19:45:29 +0300</pubDate>
-      <guid>http://localhost:36307/eui/layouts/row/index.html</guid>
+      <guid>http://localhost:1313/layouts/row/index.html</guid>
       <description>Row layout places all child containers in one row or column. It can be useful for creating lists of widgets.</description>
     </item>
     <item>
       <title>Grid</title>
-      <link>http://localhost:36307/eui/layouts/grid/index.html</link>
+      <link>http://localhost:1313/layouts/grid/index.html</link>
       <pubDate>Fri, 04 Oct 2024 19:45:29 +0300</pubDate>
-      <guid>http://localhost:36307/eui/layouts/grid/index.html</guid>
+      <guid>http://localhost:1313/layouts/grid/index.html</guid>
       <description>Grid layout puts all child containers in an even grid, wrapping each row based on the number of columns.</description>
     </item>
   </channel>

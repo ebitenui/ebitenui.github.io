@@ -1,4 +1,4 @@
-module github.com/sedyh/eui
+module github.com/ebitenui/ebitenui.github.io
 
 go 1.22.7
 
