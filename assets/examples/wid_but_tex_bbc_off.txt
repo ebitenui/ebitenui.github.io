@@ -38,7 +38,7 @@ func NewGame() *Game {
 		}),
 		// SKIP-END this
 		widget.ButtonOpts.TextProcessBBCode(false),
-		widget.ButtonOpts.TextLabel("[color=A2005C]Multiplayer[/color]"),
+		widget.ButtonOpts.TextLabel("[color=#A2005C]Multiplayer[/color]"),
 		// SKIP-START this
 		widget.ButtonOpts.WidgetOpts(
 			widget.WidgetOpts.LayoutData(widget.AnchorLayoutData{
