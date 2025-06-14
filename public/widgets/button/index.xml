@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Button - Ebiten UI</title>
-    <link>http://localhost:36307/eui/widgets/button/index.html</link>
+    <link>http://localhost:1313/widgets/button/index.html</link>
     <description>A simple button with text that can be set to a background color or image for each state and a callback to react to events.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:36307/eui/widgets/button/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/widgets/button/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

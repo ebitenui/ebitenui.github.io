@@ -1,4 +1,4 @@
-baseURL = 'https://sedyh.github.io/eui/'
+baseURL = 'https://ebitenui.github.io/'
 languageCode = 'en-us'
 title = 'Ebiten UI'
 
@@ -35,7 +35,7 @@ title = 'Ebiten UI'
   disableTagHiddenPages = false
   disableTermBreadcrumbs = false
   disableToc = false
-  editURL = 'https://github.com/sedyh/eui/edit/main/content/${FilePath}'
+  editURL = 'https://github.com/ebitenui/ebitenui.github.io/edit/master/content/${FilePath}'
   externalLinkTarget = '_self'
   highlightWrap = false
   images = ['images/hero.png']
