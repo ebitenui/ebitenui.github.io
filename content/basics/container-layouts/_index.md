@@ -53,7 +53,7 @@ func NewGame() *Game {
 }
 ```
 
-The standard library has a package with default colors that that will be useful to us, like: {{< color Indianred >}}, {{< color Goldenrod >}}, {{< color Steelblue >}}, {{< color Mediumseagreen >}}, {{< color Darkslategray >}}, {{< color Gainsboro >}}.
+The standard library has a package with default colors that will be useful to us, like: {{< color Indianred >}}, {{< color Goldenrod >}}, {{< color Steelblue >}}, {{< color Mediumseagreen >}}, {{< color Darkslategray >}}, {{< color Gainsboro >}}.
 
 ```go
 import "golang.org/x/image/colornames"
@@ -94,7 +94,7 @@ left := widget.NewContainer(
 )
 right := widget.NewContainer(
 	widget.ContainerOpts.BackgroundImage(
-		image.NewNineSliceColor(assets.Steelblue),
+		image.NewNineSliceColor(colornames.Steelblue),
 	),
 )
 root := widget.NewContainer(
